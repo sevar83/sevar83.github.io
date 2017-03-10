@@ -1,0 +1,406 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: 'Abel', Calibri, Arial, serif;
+	/*color: #331122;*/
+    color: #3a371e;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    background: #ffffff;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+a {
+    color: #2d5368;
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    /*color: #000;*/
+    /*font-weight: bold;*/
+}
+
+div.container, div.small-container {
+    margin: 0 auto;
+    /*padding: 0 20px;*/
+}
+
+div.container {
+    max-width: 940px;
+}
+
+header {
+    width: 100%;
+	height: 700px;
+    margin: 0 auto;
+    padding: 1.875em 1.875em 1.875em;
+
+	background: url("../assets/header.jpg") no-repeat;
+
+    /* Image is centered vertically and horizontally at all times */
+    background-position: 30% center;
+
+    /* Makes the image fixed in the viewport so that it doesn't move when
+       the content height is greater than the image height */
+    /*background-attachment: fixed;*/
+
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color: #2D537C;
+}
+
+/* Header color palete */
+
+.color1 {
+    color: #aeb9cc; /* heather */
+}
+.color2 {
+    color: #6182a3; /* horizon */
+}
+.color3 {
+    color: #726c14; /* olivetone */
+}
+.color4 {
+    color: #c7cddc; /* link water */
+}
+.color5 {
+    color: #bccad1; /* jet stream */
+}
+.color6 {
+    color: #402e0f; /* morocco brown */
+}
+.color7 {
+    color: #b8c8dd; /* spindle */
+}
+.color8 {
+    color: #b6d0d8; /* spindle */
+}
+.color9 {
+    color: #00060d;
+}
+.color10 {
+    color: #a0b3c9; /* echo blue */
+}
+.color11 {
+    color: #2d5368; /* chathams blue */
+}
+.color12 {
+    color: #3a371e; /* mikado */
+}
+.color13 {
+    color: #d3e3f4; /* pattens blue */
+}
+.color14 {
+    color: #0e366b; /* regal blue */
+}
+.color15 {
+    color: #505716; /* verdun green */
+}
+
+a.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+	margin-right: 32px;
+	margin-bottom: 24px;
+}
+
+a.avatar > img {
+	width: 180px;
+	height: 180px;
+    vertical-align: top;
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0;
+	text-align: center;
+}
+
+h1 {
+	float: left;
+	width: 300px;
+	height: 300px;
+	border: 2px solid #eee;
+	padding: 30px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1 a {
+	color: #eee;
+	font-family: "Stardos Stencil", cursive;
+	font-weight: normal;
+	font-size: 42px;
+	text-align: center;
+    text-decoration: none;
+	line-height: 110%;
+	vertical-align: middle;
+}
+
+hr.separator {
+	border-style: hidden;
+	border: 0;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-top: 24px;
+	margin-bottom: 20px;
+}
+
+h1 .subtitle {
+	color: blanchedalmond;
+	font-size: 30px;
+	font-family: 'Abel', sans-serif;
+	font-weight: normal;
+	letter-spacing: 0.15em;
+	line-height: 170%;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+h4 {
+    font-size: 1.0em;
+    margin: 8px 0;
+}
+
+div #intro h2 {
+    text-align: left;
+}
+
+.firstLetter {
+    float: left;
+    font-size: 4.67em;
+    line-height: 0.55;
+    margin: 0.205em 0.0em 0 0;
+}
+
+.firstLetter + span {
+    /*margin-left : -0.85em;*/
+}
+
+/* --- nav ----*/
+
+header nav {
+	float: right;
+	/*border-collapse: collapse;
+	border: none;*/
+	margin: 0 auto 0 0;
+}
+
+header nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+header nav ul > li {
+	flex: 1 1 auto;
+	padding: 1.1em;
+}
+
+header nav a {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.85em;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+header nav a.current {
+	color: #222;
+	font-weight: bold;
+	border-bottom: 1px solid #222;
+	padding-bottom: 0.4em;
+}
+
+header nav a:hover {
+	border-bottom: 4px solid #222;
+	padding-bottom: 0.4em;
+}
+
+div.content {
+	margin: 24px;
+	min-height: 400px;
+}
+
+/* CV */
+
+.cv {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.cvsection {
+    flex: 100%;
+    width: auto;
+    margin: auto auto auto 25%;
+}
+
+/* Vertical Line */
+.cvsection:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	width: 6px;
+	background: #a0b3c9;
+	left: 20%;
+	margin-left: -7px;
+}
+
+.cvdownload {
+    flex: 100%;
+}
+
+.cvphoto img {
+    width: 256px;
+    height: 256px;
+}
+
+.cvsection .title {
+    margin: 32px 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2d5368;
+}
+
+.cvinfo ul li,
+.cvcontacts ul li,
+.cveducation ul li {
+    font-size: 1.1rem;
+    display: block;
+    margin: 8px 0px;
+}
+
+.cvinfo a,
+.cvcontacts a {
+    color: #2d5368;
+    text-decoration: none;
+}
+
+.cvcontent {
+    display: inline-block;
+}
+
+.cvexperience {
+    margin: auto;
+}
+
+.cvexperience .cvcontent {
+    margin-left: 25%;
+}
+
+/* No vert line for Experience section */
+.cvexperience:before {
+    content: none;
+}
+
+/* Footer */
+
+.attribution p {
+	color: #666;
+	font-size: 75%;
+	text-align: center;
+}
+
+@media screen and (max-width: 55em) {
+
+    body {
+        font-size: 1em;
+    }
+
+    header h1, .container > header nav {
+        float: none;
+		margin: auto;
+		margin-bottom: 150px;
+    }
+
+    header > span, .container > header h1 {
+        text-align: center;
+    }
+
+    header nav {
+		float: none;
+        margin: auto;
+		width: 300px;
+    }
+
+	header nav a {
+		color: #ddd;
+		font-size: 1.5em;
+	}
+
+	header nav a.current {
+		color: #eee;
+		border-bottom: 1px solid #eee;
+	}
+
+	header nav a:hover {
+		color: #eee;
+		border-bottom: 4px solid #eee;
+	}
+
+    header > span {
+        text-indent: 30px;
+    }
+
+    .cvsection {
+        margin-left: 0;
+    }
+
+    .cvsection:before {
+        content: none;
+    }
+
+    .cvexperience .cvcontent {
+        margin-left: 0;
+    }
+}

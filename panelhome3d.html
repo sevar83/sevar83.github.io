@@ -1,0 +1,8 @@
+---
+layout: default
+title: PanelHome 3D
+projectLabel: panelhome3d
+---
+{% assign project = site.collections | where: "label", page.projectLabel | first %}
+{% assign projectDesc = site.projects | where: "link": page.projectLabel | first %}
+{% include gallery.html title=page.title desc=projectDesc.output gallery=project.docs %}

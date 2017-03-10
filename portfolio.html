@@ -1,0 +1,25 @@
+---
+layout: default
+navtitle: Portfolio
+title: Portfolio
+group: navigation
+navorder: 2
+---
+<link rel="stylesheet" type="text/css" href="/css/grid.css" />
+<script src="/js/modernizr.custom.js"></script>
+
+<h2 id="title">{{ page.title }}</h2>
+
+<ul class="cbp-ig-grid">
+
+	{% assign projects = site.projects | sort: 'weight' %}
+	{% for project in projects reversed %}
+		<li>
+			<a href="/{{ project.link }}">
+				<span class="cbp-ig-icon"><img src="{{ project.image }}" alt="{{ project.title }}"></img></span>
+				<h3 class="cbp-ig-title">{{ project.title }}</h3>
+				<span class="cbp-ig-category">{{ project.category }}</span>
+			</a>
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="/css/gallery.css" />
+<script src="/js/modernizr.custom.js"></script>
+
+<div id="grid-gallery" class="grid-gallery">
+
+	<section class="grid-head">
+		<h2 id="title">{{ include.title }}</h2>
+		<p>{{ include.desc }}</p>
+	</section>
+
+	<section class="grid-wrap">
+		<ul class="grid">
+			<li class="grid-sizer"></li><!-- for Masonry column width -->
+			{% for screen in include.gallery %}
+				<li>
+					<figure>
+						<img src="{{ screen.image }}" alt="{{ screen.title }}"/>
+						<figcaption>
+	                        <h3>{{ screen.title }}</h3>
+	                        <p>{{ screen.content }}</p>
+	                    </figcaption>
+					</figure>
+				</li>
+			{% endfor %}
+		</ul>
+	</section><!-- // grid-wrap -->
+
+	<section class="slideshow">
+		<ul>
+			{% for screen in include.gallery %}
+				<li>
+					<figure>
+						<figcaption>
+							<h3>{{ screen.title }}</h3>
+							<p>{{ screen.content }}</p>
+						</figcaption>
+						<img src="{{ screen.image }}" alt="{{ screen.title }}"/>
+					</figure>
+				</li>
+			{% endfor %}
+		</ul>
+		<nav>
+			<span class="icon nav-prev"></span>
+			<span class="icon nav-next"></span>
+			<span class="icon nav-close"></span>
+		</nav>
+		<div class="info-keys icon">Navigate with arrow keys</div>
+	</section><!-- // slideshow -->
+</div><!-- // grid-gallery -->
+
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/classie.js"></script>
+<script src="/js/cbpGridGallery.js"></script>
+<script>
+	new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+</script>
