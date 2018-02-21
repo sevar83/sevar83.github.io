@@ -6,7 +6,7 @@
         <meta name="author" content="Svetlozar Kostadinov" />
         <meta name="description" content="Personal site, CV, developer portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="developer,android,java,c++,cv,personal,resume,portfolio,bulgaria,sofia" />
+        <meta name="keywords" content="developer,programmer,android,java,kotlin,c++,cv,personal,resume,portfolio,bulgaria,sofia" />
 
         <title>Svetlozar Kostadinov</title>
 
@@ -48,6 +48,8 @@
                     
                     
                     
+  
+
   
 
   
@@ -107,7 +109,7 @@
 				<li class="language"><i class="fa-li fa fa-language color2" aria-hidden="true"></i><strong>Languages:</strong>
 					<ul class="fa-ul">
 						<li>Bulgarian (native)</li>
-						<li>English (professional)</li>
+						<li>English (technical)</li>
 					</ul>
 				</li>
 			</ul>
@@ -171,12 +173,11 @@
 		<div class="cvcontent">
 			<h3 class="title"><p>Technical Skills</p></h3>
 			<ul>
-				<li><strong>Programming Languages:</strong> Java (advanced), Kotlin (average, new), C/C++ (old, not practiced recently);</li>
+				<li><strong>Programming Languages:</strong> Java (advanced), Kotlin (advanced), C/C++ (old, not practiced recently);</li>
 				<li><strong>Other Languages:</strong> SQL, HTML, XML, XSLT, CSS;</li>
 				<li><strong>Mobile Technologies:</strong> Android SDK, Android NDK, Location, Camera, Notifications, Google Maps, Sensors, Media;</li>
-				<li><strong>Java-related technologies:</strong> AWT, Swing, JNI, JNLP;</li>
 				<li><strong>RDBMS &amp; ORM:</strong> SQLite, Spatialite, GreenDAO;</li>
-				<li><strong>Debugging tools:</strong> DDMS, Logcat, Stetho, Timber, LeakCanary, DebugDrawer, ACRA;</li>
+				<li><strong>Debugging tools:</strong> DDMS, Logcat, Stetho, Timber, LeakCanary, ACRA, Crashlytics, Eclipse MAT;</li>
 				<li><strong>Testing tools:</strong> jUnit, Mockito, Espresso, UIAutomator;</li>
 				<li><strong>Version Control Systems:</strong> Git, Mercurial;</li>
 				<li><strong>IDE:</strong> Eclipse, Android Studio, Intellij IDEA, Visual Studio, Atom;</li>
@@ -189,9 +190,9 @@
 		<div class="cvcontent">
 			<h3 class="title"><p>Niche &amp; Other Skills</p></h3>
 			<ul>
-				<li><strong>Graphics and geometry:</strong> 2D and 3D analytic geometry, CAD, OpenGL, Direct3D (basic, old);</li>
 				<li><strong>Geospatial:</strong> Maps, Map projections, geodetic datum transformations, Proj4, Spatialite, Georeferencing, Hands-on experience with WFS, WMS web services, GeoServer, GeoNode, Django, MBTiles, GeoJSON, TopoJSON;</li>
-				<li><strong>Web:</strong> Jekyll, WordPress, Xoops, Drupal, website administration & CMS management;</li>
+				<li><strong>Graphics and geometry:</strong> 2D and 3D analytic geometry, CAD, OpenGL, Direct3D (basic, old);</li>
+				<li><strong>Web:</strong> Jekyll, WordPress, Xoops, Drupal, website administration &amp; CMS management;</li>
 				<li><strong>Multimedia:</strong> Inkscape, Photoshop;</li>
 			</ul>
 		</div>
@@ -207,6 +208,58 @@
 	<ul class="cbp_tmtimeline">
 
 		
+		
+			<li>
+				<div class="cbp_tmduration">
+					
+					
+					<time class="cbp_tmtime">
+						 <span>Feb</span> 
+						 <span> 2017 - </span> 
+					</time>
+
+					
+					
+					<time class="cbp_tmtime">
+						 <span>Feb</span> 
+						 <span> 2018</span> 
+					</time>
+				</div>
+				<div class="cbp_tmicon"><img src="/assets/icons/android.svg" /></div>
+				<div class="cbp_tmlabel">
+					<h3>Android Developer</h3>
+
+					
+						<p class="cbp-ig-subtitle">Indie</p>
+					
+
+					
+						<p><p>End-to-end developer and designer of <a href="/movielovers#title"><strong>MovieLovers</strong></a> - an Android app for cinema and TV fans. Provides a comprehensive information about movies, shows and celebrities. The accent of the app is Material Design with a lot of attention to detail.</p>
+
+<ul>
+  <li>Unidirectional reactive architecture based on <a href="http://hannesdorfmann.com/android/model-view-intent">Mosby-MVI</a>.</li>
+  <li>Separated Data/Domain/Presentation layers and fully immutable models.</li>
+  <li>Consuming RESTful web services, pagination, disk and memory caching, full state restoration.</li>
+  <li>Can operate fully offline with connectivity alerts.</li>
+  <li>Using nested <code class="highlighter-rouge">RecyclerView</code>s with layout performance optimizations via shared <code class="highlighter-rouge">RecyclerView</code> pools, image preloading and more.</li>
+  <li>Heavy use of imagery, custom-crafted animations, transitions and other visual effects.</li>
+  <li>Gesture navigation.</li>
+</ul>
+
+<p><strong>App is available for free at:</strong></p>
+
+<ul>
+  <li><a href="https://play.google.com/store/apps/details?id=com.mediaclient.movielovers.mobile">Play Store</a><br /></li>
+  <li><a href="https://www.amazon.com/MovieLovers-Discover-Movies-Shows-Trailers/dp/B0768FDXFC">Amazon</a></li>
+</ul>
+
+<p><strong>Environment</strong>: Kotlin, RxJava2, Dagger2, Retrofit2, TMDB, GSON, Glide, Mosby-MVI, Conductor, PaperParcel.</p>
+
+<p>More details and screenshots: <a href="/movielovers#title">Portfolio</a>.</p>
+</p>
+					
+				</div>
+			</li>
 		
 			<li>
 				<div class="cbp_tmduration">
@@ -253,7 +306,7 @@
   <li>Experience with RESTful web services, HTTP authentication, OAuth2, XML, JSON.</li>
   <li>Experience with scraping HTML web sites and using them as emulation of REST API  with the help of Retrofit and Jsoup.</li>
   <li>Experience in database design using SQLite and Spatialite.</li>
-  <li>Refactored a large fragment-based code into clean Reactive MVVM + Data Binding architecture.</li>
+  <li>Refactored a large fragment-based codebase into clean Reactive MVVM + Data Binding architecture.</li>
   <li>Experience in unit testing and integration testing on device and emulator using JUnit, Mockito, Espresso &amp; UIAutomator.</li>
   <li>Implemented continuous integration using CircleCI for the project’s Git repository in BitBucket.</li>
   <li>Successfully set up ACRA bug reporting backend and Google Analytics and used it to collect anonymous data about runtime problems to keep the users from experiencing fatal crashes.</li>
@@ -497,7 +550,7 @@
         </div>
 
         <footer class="attribution">
-            <p>© 2017 Svetlozar Kostadinov. Powered by Jekyll. Hosted by GitHub. <a href="https://github.com/sevar83/sevar83.github.io">Source code</a></p>
+            <p>© 2018 Svetlozar Kostadinov. Powered by Jekyll. Hosted by GitHub. <a href="https://github.com/sevar83/sevar83.github.io">Source code</a></p>
 
         </footer>
     </body>
