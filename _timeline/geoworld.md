@@ -26,7 +26,7 @@ End-to-end developer of [**GeoWorld**]({{ site.baseUrl }}/{{ page.portfolioUrl }
 - Experience with RESTful web services, HTTP authentication, OAuth2, XML, JSON.
 - Experience with scraping HTML web sites and using them as emulation of REST API  with the help of Retrofit and Jsoup.
 - Experience in database design using SQLite and Spatialite.
-- Refactored a large fragment-based code into clean Reactive MVVM + Data Binding architecture.
+- Refactored a large fragment-based codebase into clean Reactive MVVM + Data Binding architecture.
 - Experience in unit testing and integration testing on device and emulator using JUnit, Mockito, Espresso & UIAutomator.
 - Implemented continuous integration using CircleCI for the project’s Git repository in BitBucket.
 - Successfully set up ACRA bug reporting backend and Google Analytics and used it to collect anonymous data about runtime problems to keep the users from experiencing fatal crashes.
