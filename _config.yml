@@ -3,7 +3,7 @@ subtitle: Software Developer
 desc: Personal site, CV, developer portfolio
 author: Svetlozar Kostadinov
 keywords: developer,programmer,android,java,kotlin,c++,cv,personal,resume,portfolio,bulgaria,sofia
-attribution: "© 2018 Svetlozar Kostadinov. Powered by Jekyll. Hosted by GitHub. [Source code](https://github.com/sevar83/sevar83.github.io)"
+attribution: "© 2019 Svetlozar Kostadinov. Powered by Jekyll. Hosted by GitHub. [Source code](https://github.com/sevar83/sevar83.github.io)"
 permalink: pretty
 collections:
     timeline:
