@@ -6,7 +6,6 @@ weight: 38
 since: Nov, 2018
 until: -, Now
 ---
-Part of a Scrum team of 2 Android and 2 iOS developers. Architecture, development and high-level estimation of
-a mobile SDK for a customer providing payment aggregation services.
+Architecture and development of a native Android payment SDK for a large European payment service provider. Responsible for creating a pluggable framework, API design and extensible UI components for handling various payment methods (incl. credit cards + 3DS, SEPA, PayPal, etc.). I worked over card scanning feature using camera and OCR. I participated in the design of the security scheme appropriate for mobile SDK authentication.
 
-**Technical skills and tools**: Java, Kotlin, Dagger, Retrofit, OkHttp, Moshi, REST, JSON
+**Tools**: Kotlin, Coroutines, OkHttp, Retrofit, Moshi, REST, JSON, Material Components, ViewModel, LiveData, Chrome Custom Tabs, JUnit, Mockito, Robolectric.
